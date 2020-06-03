@@ -13,6 +13,8 @@ class Student
       CREATE TABLE IF NOT EXIST songs (id INTEGER PRIMARY KEY, 
       name TEXT, grade TEXT)
       SQL
+    DB[:conn].execute(sql)
+  end 
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]  
   
