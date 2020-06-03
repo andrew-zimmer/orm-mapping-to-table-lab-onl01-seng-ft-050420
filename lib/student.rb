@@ -10,7 +10,7 @@ class Student
   
   def self.create_table 
     sql = << -SQL 
-      ''
+      CREATE TABLE IF NOT EXIST songs (id INTEGER PRIMARY)
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]  
   
